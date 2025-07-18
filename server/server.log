@@ -29,3 +29,4 @@ User logged in successfully: {
   createdAt: 2025-07-18T10:32:10.387Z
 }
 [0mPOST /api/auth/login [32m200[0m 1.171 ms - 208[0m
+[0mGET /api/health [32m200[0m 0.976 ms - 153[0m
