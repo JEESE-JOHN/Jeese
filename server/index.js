@@ -64,7 +64,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use('/uploads', express.static('uploads'));
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/medilocate', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/findmymed', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
@@ -122,9 +122,9 @@ app.get('/api/health', (req, res) => {
 // API documentation endpoint
 app.get('/api/docs', (req, res) => {
   res.json({
-    title: 'MediLocate API',
+    title: 'Find my Med API',
     version: '1.0.0',
-    description: 'Real-time medicine availability search platform API',
+    description: 'Find my Med - Real-time medicine availability search platform API',
     endpoints: {
       auth: '/api/auth',
       medicines: '/api/medicines',

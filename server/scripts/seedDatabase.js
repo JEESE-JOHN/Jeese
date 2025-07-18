@@ -127,7 +127,7 @@ const sampleMedicines = [
 const sampleUsers = [
   {
     name: 'Admin User',
-    email: 'admin@medilocate.com',
+    email: 'admin@findmymed.com',
     phone: '+1234567890',
     password: 'admin123',
     role: 'admin',
@@ -248,7 +248,7 @@ const samplePharmacies = [
 async function seedDatabase() {
   try {
     // Connect to MongoDB
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/medilocate', {
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/findmymed', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
@@ -335,7 +335,7 @@ async function seedDatabase() {
     console.log(`Created ${createdPharmacies.length * createdMedicines.length} inventory items`);
 
     console.log('\nTest accounts:');
-    console.log('Admin: admin@medilocate.com / admin123');
+    console.log('Admin: admin@findmymed.com / admin123');
     console.log('Pharmacist 1: rajesh@pharmacy.com / pharmacy123');
     console.log('Pharmacist 2: priya@pharmacy.com / pharmacy123');
     console.log('Customer: john@customer.com / customer123');
