@@ -182,7 +182,7 @@ function validateRegisterForm(name, email, phone, password, agreeTerms) {
     } else if (!REGEX_PATTERNS.password.test(password)) {
         showFieldError(
             document.getElementById('register-password'), 
-            'Password must be at least 8 characters with uppercase, lowercase, and number'
+            'Password must be at least 6 characters'
         );
         isValid = false;
     }

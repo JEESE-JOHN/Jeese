@@ -238,7 +238,7 @@ const STORAGE_KEYS = {
 const REGEX_PATTERNS = {
     email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
     phone: /^[+]?[(]?[\+]?\d{2,3}[)]?[-\s\.]?\d{3,4}[-\s\.]?\d{4,6}$/,
-    password: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d@$!%*?&]{8,}$/,
+    password: /^.{6,}$/, // Simplified: minimum 6 characters (was too strict before)
     postalCode: /^\d{5,6}$/
 };
 
