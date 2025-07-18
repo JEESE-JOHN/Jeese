@@ -1,0 +1,31 @@
+nohup: ignoring input
+Test server running on port 5000
+Environment: development
+Client URL: http://localhost:8000
+Note: This is a test server running without MongoDB
+[0mGET /api/health [32m200[0m 1.810 ms - 151[0m
+Registration attempt: {
+  name: 'Test User',
+  email: 'test@example.com',
+  phone: '1234567890',
+  role: 'customer'
+}
+User registered successfully: {
+  id: '1752834730387',
+  name: 'Test User',
+  email: 'test@example.com',
+  phone: '1234567890',
+  role: 'customer',
+  createdAt: 2025-07-18T10:32:10.387Z
+}
+[0mPOST /api/auth/register [32m201[0m 6.025 ms - 220[0m
+Login attempt: { email: 'test@example.com', phone: undefined }
+User logged in successfully: {
+  id: '1752834730387',
+  name: 'Test User',
+  email: 'test@example.com',
+  phone: '1234567890',
+  role: 'customer',
+  createdAt: 2025-07-18T10:32:10.387Z
+}
+[0mPOST /api/auth/login [32m200[0m 1.171 ms - 208[0m
